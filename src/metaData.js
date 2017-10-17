@@ -50,6 +50,7 @@ export function removeProvider (provider) {
  *
  * @param {String} type The type of metadata requested from the metadata store
  * @param {String} imageId The Cornerstone Image Object's imageId
+ * @param {*} dataSet optional dataset to pass through to the provider
  *
  * @returns {*} The metadata retrieved from the metadata store
  */
