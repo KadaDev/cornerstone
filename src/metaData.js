@@ -53,10 +53,10 @@ export function removeProvider (provider) {
  *
  * @returns {*} The metadata retrieved from the metadata store
  */
-function getMetaData (type, imageId) {
+function getMetaData (type, imageId, dataSet) {
   // Invoke each provider in priority order until one returns something
   for (let i = 0; i < providers.length; i++) {
-    const result = providers[i].provider(type, imageId);
+    const result = providers[i].provider(type, imageId, dataSet);
 
     if (result !== undefined) {
       return result;
